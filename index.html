@@ -2,22 +2,52 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <meta name="description" content="Homepage for Joshua's personal website" />
+        <meta name="keywords" content="portfolio, resume" />
+        <meta name="author" content="Joshua Duong" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Hello World</title>
+        <title>Joshua Duong</title>
         <link href="css/main.css" rel="stylesheet" />
+    </head>
     <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/" id="nav-active"><strong>Home</strong></a></li>
+                    <li><a href="/experience">Experience</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/resume">Resume</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
         <main>
-            <p>Hello World</p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Id consectetur purus ut faucibus pulvinar. Nisl suscipit adipiscing bibendum est ultricies integer. Dui nunc mattis enim ut. 
-                Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Enim nec dui nunc mattis enim ut. 
-                At tellus at urna condimentum mattis pellentesque. Sagittis orci a scelerisque purus semper eget. 
-                Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. Ut etiam sit amet nisl. Faucibus scelerisque eleifend donec pretium vulputate. 
-                Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Turpis egestas maecenas pharetra convallis posuere morbi leo. 
-                Varius duis at consectetur lorem donec. Amet mattis vulputate enim nulla aliquet. Vel facilisis volutpat est velit egestas dui. 
-                Tellus pellentesque eu tincidunt tortor aliquam.
-            </p>
+            <section id="contact-card">
+                <picture>
+                    <source srcset="images/me.jpg" media="(min-width:1025px)" />
+                    <img id="selfie" src="images/me_150.jpg" alt="Picture of me :)" />
+                </picture>
+                <hr />
+                <a href="https://www.github.com/joshduo"><img src="images/github-icon.svg" alt="GitHub icon" class="icon" id="github" /></a>
+                <a href="https://www.linkedin.com/in/joshua-duong/"><img src="images/linkedin-icon.svg" alt="LinkedIn icon" class="icon" id="linkedin" /></a>
+                <br />
+                <br />
+                <a href="mailto:joshduo@outlook.com">joshduo@outlook.com</a>
+                <hr />
+            </section>
+
+            <section id="description">
+                <h2>Joshua Duong</h2>
+                <h3><em>Computer science undergraduate and tutor</em></h3>
+                <p>
+                    Hey, I'm Joshua. I'm a fourth-year Computer Science undergraduate at <a href="https://ucsd.edu">UC San Diego</a> with a minor in Cognitive Science.
+                    I plan to graduate in <strong>September 2021</strong>.
+                    Right now, I'm working as a tutor for the CSE department at UCSD, providing instructional assistance for CS courses. 
+                    I've always had an interest in technology and want to solve problems and write meaningful code that benefits others.
+                    I'm in the process of discovering what field(s) of software engineering I'm interested in working in for my career.
+					To that end, I'd love to find work and gain experience to develop my interests!
+                </p>
+            </section>
         </main>
     </body>
 </html>
