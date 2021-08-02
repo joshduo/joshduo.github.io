@@ -2,11 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="description" content="Homepage for Joshua's personal website" />
-        <meta name="keywords" content="portfolio, resume" />
+        <title>Joshua Duong</title>
+        <meta name="title" content="Joshua Duong" />
+        <meta name="description" content="Personal website for Joshua Duong, a computer science undergraduate at UC San Diego." />
         <meta name="author" content="Joshua Duong" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Joshua Duong</title>
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://joshduo.github.io">
+        <meta property="og:title" content="Joshua Duong">
+        <meta property="og:description" content="Personal website for Joshua Duong, a computer science undergraduate at UC San Diego.">
+        <meta property="og:image" content="https://joshduo.github.io/images/homepage.jpg">
+
         <link href="/css/main.css" rel="stylesheet" />
     </head>
     <body>
@@ -22,32 +29,34 @@
             </nav>
         </header>
         <main>
-            <section id="contact-card">
-                <picture>
-                    <source srcset="/images/me.jpg" media="(min-width:1025px)" />
-                    <img id="selfie" src="/images/me_150.jpg" alt="Picture of me :)" />
-                </picture>
-                <hr />
-                <a href="https://www.github.com/joshduo"><img src="/images/github-icon.svg" alt="GitHub icon" class="icon" id="github" /></a>
-                <a href="https://www.linkedin.com/in/joshua-duong/"><img src="/images/linkedin-icon.svg" alt="LinkedIn icon" class="icon" id="linkedin" /></a>
-                <br />
-                <br />
-                <a href="mailto:joshduo@outlook.com">joshduo@outlook.com</a>
-                <hr />
-            </section>
-
-            <section id="description">
-                <h2>Joshua Duong</h2>
-                <h3><em>Computer science undergraduate and tutor</em></h3>
-                <p>
-                    Hey, I'm Joshua. I'm a fourth-year Computer Science undergraduate at <a href="https://ucsd.edu">UC San Diego</a> with a minor in Cognitive Science.
-                    I plan to graduate in <strong>September 2021</strong>.
-                    Right now, I'm working as a tutor for the CSE department at UCSD, providing instructional assistance for CS courses. 
-                    I've always had an interest in technology and want to solve problems and write meaningful code that benefits others.
-                    I'm in the process of discovering what field(s) of software engineering I'm interested in working in for my career.
-					To that end, I'd love to find work and gain experience to develop my interests!
-                </p>
-            </section>
+            <div class="container">
+                <section id="contact-card">
+                    <picture>
+                        <source srcset="/images/me.jpg" media="(min-width:1025px)" />
+                        <img id="selfie" src="/images/me_150.jpg" alt="Picture of me :)" />
+                    </picture>
+                    <hr />
+                    <a href="https://www.github.com/joshduo"><img src="/images/github-icon.svg" alt="GitHub icon" class="icon" id="github" /></a>
+                    <a href="https://www.linkedin.com/in/joshua-duong/"><img src="/images/linkedin-icon.svg" alt="LinkedIn icon" class="icon" id="linkedin" /></a>
+                    <br />
+                    <br />
+                    <a href="mailto:joshduo@outlook.com">joshduo@outlook.com</a>
+                    <hr />
+                </section>
+    
+                <section id="description">
+                    <h2>Joshua Duong</h2>
+                    <h3><em>Computer science undergraduate and tutor</em></h3>
+                    <p>
+                        Hey, I'm Joshua. I'm a fourth-year Computer Science undergraduate at <a href="https://ucsd.edu">UC San Diego</a> with a minor in Cognitive Science.
+                        I plan to graduate in <strong>September 2021</strong>.
+                        Right now, I'm working as a tutor for the CSE department at UCSD, providing instructional assistance for CS courses. 
+                        I've always had an interest in technology and want to solve problems and write meaningful code that benefits others.
+                        I'm in the process of discovering what field(s) of software engineering I'm interested in working in for my career.
+                        To that end, I'd love to find work and gain experience to develop my interests!
+                    </p>
+                </section>
+            </div>
         </main>
     </body>
 </html>
