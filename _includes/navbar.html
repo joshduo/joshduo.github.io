@@ -1,0 +1,11 @@
+<header>
+    <nav>
+        <ul>
+            <li><a href="/" {% if page.section == "home" %} id="nav-active" {% endif %} >Home</a></li>
+            <li><a href="/experience" {% if page.section == "experience" %} id="nav-active" {% endif %}>Experience</a></li>
+            <li><a href="/projects" {% if page.section == "projects" %} id="nav-active" {% endif %}>Projects</a></li>
+            <li><a href="/resume" {% if page.section == "resume" %} id="nav-active" {% endif %}>Resume</a></li>
+            <li><a href="/contact" {% if page.section == "contact" %} id="nav-active" {% endif %}>Contact</a></li>
+        </ul>
+    </nav>
+</header>

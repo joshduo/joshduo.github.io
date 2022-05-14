@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" id="resume-html">
+    <head>
+        <title>{{ site.title }} {% if page.subtitle %} - {{ page.subtitle }} {% endif %}</title>
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        {% seo %}
+    </head>
+    <body id="resume-body">
+        {% include navbar.html %}
+        <main id="resume-main">
+            {{ content }}
+            <section id="loading">
+                <p>Loading...</p>
+                <div id="square"></div>
+            </section>
+            <section id="resume-pdf"></section>
+            <script src="/js/pdfobject.min.js"></script>
+            <script src="/js/resume.js" defer></script>
+        </main>
+    </body>
+</html>

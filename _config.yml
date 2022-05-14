@@ -1,0 +1,15 @@
+title: Joshua Duong
+author: Joshua Duong
+email: joshduo@outlook.com
+description: >- # this means to ignore newlines
+  Joshua's personal website.
+url: "https://joshduo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+image: /images/homepage.jpg
+
+
+plugins:
+  - jekyll-seo-tag
+
+collections:
+  - experiences
+  - projects

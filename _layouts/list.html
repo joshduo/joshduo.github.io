@@ -1,0 +1,45 @@
+---
+layout: base
+---
+<section class="entries">
+    <h1>{{page.subtitle}}</h1>
+    {% if page.section == "experience" %}
+        {% assign entries = site.experiences | sort: "order" %}
+    {% elsif page.section == "projects"%}
+        {% assign entries = site.projects | sort: "order" %}
+    {% else %}
+        {% assign entries = "" %}
+    {% endif %}
+    
+    {% for entry in entries %}
+        <article class="entry">
+            <div class="entry-card">
+            {% if entry.org %}
+                <h2>{{ entry.org }}</h2>
+            {% endif %}
+            {% if entry.svg %}
+                <img src="{{ entry.svg.file }}" alt="{{ entry.svg.alt }}" class="thumb" />
+            {% else %}
+                <picture>
+                    <source srcset="{{ entry.img.normal }}" media="(min-width:1025px)" />
+                    <img src="{{ entry.img.small }}" alt="{{ entry.img.alt}}" class="thumb" />
+                </picture>
+            {% endif %}
+            </div>
+            <div class="entry-info">
+                <h2>{{ entry.name }}</h2>
+                {% if entry.time_period %}
+                    <h3><em>{{ entry.time_period }}</em></h3>
+                {% endif %}
+                {% if entry.github_repo %}
+                <h3><a href="{{ entry.github }}">GitHub repo</a></h3>
+                {% endif %}
+                <br />
+                {{ entry.content }}
+            </div>
+        </article>
+        {% unless forloop.last %}
+            <hr />
+        {% endunless %}
+    {% endfor %}
+</section>
