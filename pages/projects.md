@@ -2,5 +2,5 @@
 layout: list
 section: projects
 subtitle: Projects
-permalink: /projects
+permalink: /projects/
 ---
