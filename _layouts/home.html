@@ -1,0 +1,22 @@
+---
+layout: base
+---
+<div class="container">
+    <section id="contact-card">
+        <picture>
+            <source srcset="/images/me.jpg" media="(min-width:1025px)" />
+            <img id="selfie" src="/images/me_150.jpg" alt="Picture of me :)" />
+        </picture>
+        <hr />
+        <a href="https://www.github.com/{{ site.github_username }}"><img src="/images/github-icon.svg" alt="GitHub icon" class="icon" id="github" /></a>
+        <a href="{{ site.linkedin_url }}"><img src="/images/linkedin-icon.svg" alt="LinkedIn icon" class="icon" id="linkedin" /></a>
+        <br />
+        <br />
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <hr />
+    </section>
+
+    <section id="description">
+        {{ content }}
+    </section>
+</div>
