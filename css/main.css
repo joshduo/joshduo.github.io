@@ -16,15 +16,21 @@
   --img-size: 12vw;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
 main {
   padding: 25px;
   margin: 0;
 }
 
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
 
 p {
   line-height: 1.5em;
@@ -48,7 +54,7 @@ nav li {
 
 nav a {
   font-size: 110%;
-  color: #2f4f4f;
+  color: black;
   text-decoration: underline rgba(0, 0, 0, 0);
 }
 
@@ -119,14 +125,6 @@ h1 {
   height: var(--img-size);
 }
 
-#resume-html,
-#resume-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 #resume-body,
 #resume-main {
   display: flex;
@@ -138,6 +136,7 @@ h1 {
 }
 
 #resume-main {
+  height: 0;
   flex: 1 1 auto;
   margin: 0;
   padding: 0;
@@ -189,35 +188,6 @@ h1 {
 
 #contact-links h2 {
   flex-basis: 100%;
-}
-
-@media (hover: hover) {
-  nav a {
-      transition: color 500ms, text-decoration 500ms;
-  }
-
-  #github,
-  #linkedin {
-      transition: filter 500ms;
-  }
-
-  #envelope {
-      transition: transform 500ms;
-  }
-
-  #envelope:hover {
-      transform: rotate(1turn);
-  }
-
-  #github:hover {
-      background-color: #dbd6d1;
-      filter: invert(1);
-      border-radius: 100%;
-  }
-  
-  #linkedin:hover {
-      filter: invert(32%) sepia(100%) saturate(629%) hue-rotate(179deg) brightness(89%) contrast(90%);
-  }
 }
 
 /* tablet styling; main styling also applies */
