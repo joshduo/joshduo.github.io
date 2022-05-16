@@ -1,4 +1,5 @@
 ---
+order: 2
 org: UC San Diego
 img:
  normal: /images/ucsd.png
