@@ -2,7 +2,7 @@
 layout: base
 ---
 <section class="entries">
-    <h1>{{page.subtitle}}</h1>
+    <h1>{{page.title}}</h1>
     {% if page.section == "experience" %}
         {% assign entries = site.experiences | sort: "order" %}
     {% elsif page.section == "projects"%}
@@ -29,7 +29,7 @@ layout: base
             <div class="entry-info">
                 <h2>{{ entry.name }}</h2>
                 {% if entry.time_period %}
-                    <h3><em>{{ entry.time_period }}</em></h3>
+                    <h3>{{ entry.time_period }}</h3>
                 {% endif %}
                 {% if entry.github_repo %}
                 <h3><a href="{{ entry.github }}">GitHub repo</a></h3>

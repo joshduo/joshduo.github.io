@@ -1,6 +1,6 @@
 ---
 layout: list
 section: projects
-subtitle: Projects
+title: Projects
 permalink: /projects/
 ---

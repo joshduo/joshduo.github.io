@@ -1,7 +1,7 @@
 ---
 layout: contact
 section: contact
-subtitle: Contact
+title: Contact
 permalink: /contact/
 ---
 # Contact

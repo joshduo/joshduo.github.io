@@ -37,7 +37,7 @@ p {
 }
 
 nav {
-  background-color: #f8f9fa;
+  background-color: #eeeeee;
 }
 
 nav ul {
@@ -113,6 +113,15 @@ h1 {
 
 .entry h2 {
   margin-top: 0;
+}
+
+.entry-info h2, .entry-info h3 {
+  margin: 0 auto;
+}
+
+.entry-info h3 {
+  font-weight: normal;
+  color: gray;
 }
 
 .entry-card {

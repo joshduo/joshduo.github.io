@@ -5,7 +5,7 @@ email: joshduo@outlook.com
 description: >- # this means to ignore newlines
   Joshua's personal website.
 url: "https://joshduo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-image: /images/homepage.jpg
+ogimage: https://joshduo.github.io/images/ogimage.png
 
 github_username: joshduo
 linkedin_url: https://www.linkedin.com/in/joshua-duong/

@@ -1,6 +1,6 @@
 ---
 layout: list
 section: experience
-subtitle: Experience
+title: Experience
 permalink: /experience/
 ---
