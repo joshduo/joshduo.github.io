@@ -27,10 +27,22 @@ layout: base
             {% endif %}
             </div>
             <div class="entry-info">
-                <h2>{{ entry.name }}</h2>
-                {% if entry.time_period %}
-                    <h3>{{ entry.time_period }}</h3>
-                {% endif %}
+                {% if entry.titles %}
+                    {% for title in entry.titles %}
+                        <h2>{{ title[1].name }}</h2>
+                        {% if title[1].time_period %}
+                            <h3>{{ title[1].time_period }}</h3>
+                        {% endif %}
+                        {% unless forloop.last %}
+                            <br />
+                        {% endunless %}
+                    {% endfor %}
+                {% else %}
+                    <h2>{{ entry.name }}</h2>
+                    {% if entry.time_period %}
+                        <h3>{{ entry.time_period }}</h3>
+                    {% endif %}
+                {% endif%}
                 {% if entry.github_repo %}
                     <h3><a href="{{ entry.github_repo }}">GitHub repo</a></h3>
                 {% endif %}

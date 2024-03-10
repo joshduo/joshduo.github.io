@@ -5,8 +5,13 @@ img:
  normal: /images/appfolio.png
  small: /images/appfolio_100.png
  alt: Appfolio logo
-name: Software Engineer, Full Stack
-time_period: November 2021 - Present
+titles:
+ swe2:
+  name: Software Engineer II, Full Stack
+  time_period: March 2024 - Present
+ swe1:
+  name: Software Engineer, Full Stack
+  time_period: November 2021 - March 2024
 ---
 At AppFolio, I design scalable and robust web-based solutions in an Agile team using **Ruby on Rails**, **MySQL**, **JavaScript**, **TypeScript**, **React**, **HTML**, and **CSS**. I work on [Tenant Screening](https://www.appfolio.com/services/tenant-screening), building and maintaining software to screen tenants quickly and efficiently while maintaining maximum possible data accuracy.
 
